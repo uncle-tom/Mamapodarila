@@ -1,0 +1,238 @@
+<div class="header-buy">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-9">{{product.name}}</div>
+			<div class="col-md-3">
+				<ngcart-addtocart id="{{product.id}}" name="{{product.name}}" data="{color: product_color, size: product_size}" price="{{product.price}}" quantity="1">Купить</ngcart-addtocart>
+			</div>
+		</div>
+	</div>
+</div>
+<div ng-include="'header/header.html'"></div>
+<!-- Хлебные крошки -->
+
+<div class="container breadcrumb">
+	<div class="row">
+		<div class="col-md-12">
+			<div xmlns:v="http://rdf.data-vocabulary.org/#">
+				<span typeof="v:Breadcrumb">
+				<a href="/" rel="v:url" property="v:title"> Мама подарила!</a> › </span>
+				<span typeof="v:Breadcrumb"> <a href="/product/{{product.id}}" rel="v:url" property="v:title">{{product.name}}</a> </span>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- Хлебные крошки -->
+
+<div class="container-fluid mobile-show">
+	<div class="row product-page">
+		<!-- Для мобилки -->
+		<div class="col-md-7 ">
+			<ks-swiper-container swiper="swiper" initial-slide="0" loop="true"  pagination-is-active="true" slides-per-view="1" space-between="5" pagination-clickable="false" autoplay="42500"> 
+			  <ks-swiper-slide class="swiper-slide" ng-repeat="img in product.photos">
+			    <img src="{{img.image.url}}" alt="">
+			  </ks-swiper-slide>
+			</ks-swiper-container>
+		</div>
+		<!-- Для мобилки -->
+	</div>
+</div>
+
+<div class="container wow fadeIn">
+	<div class="row product-page">
+		<div class="col-md-9 pc-show">
+			<div class="product-page_main">
+				<div style="display:flex;">
+				<img 
+				  ng-src="{{mainImageUrl}}"  
+				  class="product-images_main"
+				  ng-repeat="img in product.photos" />	
+				</div>
+				<div ng-if="product.has_popular" class="haspopularphoto" style="top:-8px;">
+					<span class="haspopular">Топ продаж</span>	
+				</div>
+			</div>
+			<div class="product-page_main product-thumbs">
+			<ks-swiper-container swiper="swiper" initial-slide="0" loop="true"  pagination-is-active="false" slides-per-view="5" space-between="5" pagination-clickable="true" show-nav-buttons="true">
+		    	<ks-swiper-slide class="swiper-slide" ng-repeat="img in product.photos">
+		    		<img ng-click="setImage(img.image.url)" ng-src="{{img.image.url}}" alt="">
+		    	</ks-swiper-slide>
+				</ks-swiper-container>
+
+			</div>
+			
+		</div>
+		<div class="col-md-3">
+			<div class="sidebar">
+				<p ng-class="product.in_stock ? 'in_stock-true' : 'in_stock-false'">Статус: {{product.in_stock ? 'В наличии' : 'Нет в наличии'}}</p>
+				<p>Артикул: {{product.permalink}}</p>
+			</div>
+			<div class="sidebar">
+				<pre>{{product.description}}</pre>
+				<div class="product-page_price">
+					<span ng-class="product.sale_price ? 'sale-true' : 'sale-false'">{{product.price}} ГРН</span>
+						<br><span ng-if="product.sale_price">{{product.sale_price}} ГРН</span>
+				</div>
+				<div class="product-page_buy">
+					<ngcart-addtocart id="{{product.id}}" name="{{product.name}}" data="{color: product_color, size: product_size}" price="{{product.price}}" quantity="1">Купить</ngcart-addtocart>
+				</div>	
+				
+			</div>
+			<div class="sidebar">
+				<p>Это популярный товар</p>
+				<p>Оплата и доставка</p>
+				<p>{{product.sale_price}}</p>
+				<p ng-if="product.has_sale">ДАДАДА</p>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="container wow fadeIn">
+	<div class="row product-page">
+		<div class="col-md-12">
+			<div class="col-md-12 product-page_main">
+		  	<!-- Видео обзор -->
+	  		<div class="row product-page_video">
+	  			<div class="col-md-12">
+			  		<h2 class="text-center">Видео обзор продукта: {{product.url_video}}</h2>
+			  		<iframe width="100%" height="500" ng-src="{{product.url_video}}" frameborder="0" allowfullscreen></iframe>
+		  		</div>
+	  		</div>
+		  	<!-- Комплект поставки -->
+	  		<div class="row product-page_complect">
+	  			<div class="col-md-12">
+		  			<div class="col-md-4">
+		  				<h2>Комплект поставки</h2>	
+		  			</div>
+		  			<div class="col-md-8">
+							<div class="product-page_columns">
+								<pre>{{product.complect}}</pre>	
+							</div>
+		  			</div>
+	  			</div>
+	  		</div>
+		  	
+		  	<!-- Стоимость доставки -->
+	  		<div class="row">
+		  		<div class="col-md-12">
+		  			<div class="col-md-4">
+		  				<h2>Производитель</h2>	
+		  			</div>
+		  			<div class="col-md-8">
+		  				<div class="product-page_columns">
+		  					<pre>{{product.own}}</pre>	
+		  				</div>
+		  			</div>
+		  		</div>
+	  		</div>
+	  		
+	  		<!-- Возраст --> 
+	  		<div class="row">
+		  		<div class="col-md-12">
+		  			<div class="col-md-4">
+		  				<h2>Возраст</h2>	
+		  			</div>
+		  			<div class="col-md-8">
+		  				<div class="product-page_columns">
+		  					<pre>{{product.age}}</pre>	
+		  				</div>
+		  			</div>
+		  		</div>
+	  		</div>
+
+	  		<!-- Подробное описание -->
+	  		<div class="row">
+		  		<div class="col-md-12">
+		  			<div class="col-md-4">
+		  				<h2>Описание</h2>	
+		  			</div>
+		  			<div class="col-md-8">
+		  				<div class="product-page_columns">
+		  					<pre>{{product.full_description}}</pre>	
+		  				</div>
+		  			</div>
+		  		</div>
+	  		</div>
+	  	</div>
+		</div>
+	</div>
+</div>
+
+
+
+<div class="container wow fadeIn" >
+	<div class="col-md-12">
+	<md-content>
+    <md-tabs md-dynamic-height md-border-bottom>
+      <md-tab label="Новинки">
+        <md-content class="md-padding">
+          <div class="row">
+						<div ng-repeat="product in products | limitTo:3">
+							<div class="col-md-4">
+								<div class="product">
+									<a href="/product/{{product.id}}">
+									<div class="product-photo">
+										<mainphotoproduct></mainphotoproduct>
+									</div>
+									<h4>{{product.name}}</h4>
+									</a>
+									<h4>{{product.price}} ГРН</h4>
+									<ngcart-addtocart  id="{{product.id}}" name="{{product.name}}" data="{color: product_color, size: product_size}" price="{{product.price}}" quantity="1">Купить</ngcart-addtocart>
+								</div>
+							</div>
+						</div>
+					</div>
+        </md-content>
+      </md-tab>
+      <md-tab label="Популярное">
+        <md-content class="md-padding">
+          <div class="row">
+						<div ng-repeat="product in products | limitTo:3 | filter: haspopularFilter">
+							<div class="col-md-4">
+								<div class="product">
+									<a href="/product/{{product.id}}">
+									<div class="product-photo">
+										<mainphotoproduct></mainphotoproduct>
+									</div>
+									<h4>{{product.name}}</h4>
+									</a>
+									<h4>{{product.price}} ГРН</h4>
+									<ngcart-addtocart  id="{{product.id}}" name="{{product.name}}" data="{color: product_color, size: product_size}" price="{{product.price}}" quantity="1">Купить</ngcart-addtocart>
+								</div>
+							</div>
+						</div>
+					</div>
+        </md-content>
+      </md-tab>
+      <md-tab label="Скидки">
+        <md-content class="md-padding">
+          <div class="row">
+						<div ng-repeat="product in products | limitTo:3">
+							<div class="col-md-4">
+								<div class="product">
+									<a href="/product/{{product.id}}">
+									<div class="product-photo">
+										<mainphotoproduct></mainphotoproduct>
+									</div>
+									<h4>{{product.name}}</h4>
+									</a>
+									<h4>{{product.price}} ГРН</h4>
+									<ngcart-addtocart  id="{{product.id}}" name="{{product.name}}" data="{color: product_color, size: product_size}" price="{{product.price}}" quantity="1">Купить</ngcart-addtocart>
+								</div>
+							</div>
+						</div>
+					</div>
+        </md-content>
+      </md-tab>
+    </md-tabs>
+  </md-content>
+  </div>
+</div>
+<div ng-include="'footer/footer.html'"></div>
+
+
+
+
+<script type="text/javascript">
+	new WOW().init();
+</script>
