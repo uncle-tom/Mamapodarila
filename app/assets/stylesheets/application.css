@@ -226,13 +226,13 @@ md-content.md-default-theme, md-content {
 }
 
 .welcome {
-	background: url('http://i.huffpost.com/gen/1722756/images/o-TOYS-facebook.jpg');
+	background: url('mainpage-bg.jpg');
 	background-size: cover;
 	background-position: 50% 50%;
 }
 
 .foundus {
-	background: url('http://candyladyshop.ru/assets/img/bg/contact.png');
+	background: url('');
 	background-size: cover;
 	background-position: 50% 70%;
 }
@@ -284,14 +284,14 @@ md-content.md-default-theme, md-content {
 #coolone {
 	text-align: center;
 	color: #fff;
-	background-image: url('http://cache.lego.com/r/www/r/duplo/-/media/franchises/duplo%202015/home/ctas/homepage_myfirst_cta.jpg');
+	background-image: url('mainpage-bg2.jpg');
 	background-size: cover;
 }
 
 #cooltwo {
 	text-align: center;
 	color: #fff;
-	background-image: url('http://candyladyshop.ru/assets/img/bg/divider2.jpg');
+	background-image: url('');
 	background-size: cover;
 }
 
