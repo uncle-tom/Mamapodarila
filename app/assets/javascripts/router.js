@@ -49,6 +49,11 @@ angular
         controller: 'mainCtrl',
         templateUrl: 'main/about.html'
       })
+      .state('paydelivery', {
+        url: '/paydelivery', 
+        controller: 'mainCtrl',
+        templateUrl: 'main/paydelivery.html'
+      })
       .state('contact', {
         url: '/contact', 
         controller: 'mainCtrl',

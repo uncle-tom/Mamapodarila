@@ -629,7 +629,7 @@ footer {
 	margin: 20px 0px 0px 0px;	
 }
 
-.product-page, .about-page {
+.product-page, .about-page, .paydelivery-page, .contact-page {
 	margin: 20px 0px;
 }
 
@@ -637,7 +637,7 @@ footer {
 	color: #444444;
 }
 
-.product-page_main, .about-page_main {
+.product-page_main, .about-page_main, .paydelivery-page_main {
 	background: #fff;
 	color: #848484;
   border-radius: 2px;
@@ -863,6 +863,53 @@ li.active { color:orange;  }
 	border-radius: 50%;
 }
 
+/****************
+	Paydelivery
+****************/
+
+.paydelivery-page_main {
+	color: #000 !important;
+	padding-top: 20px;
+}
+
+/****************
+	Contact
+****************/
+
+.contact-page_block_img {
+	float:left;
+}
+
+.contact-page_block_img img {
+  width: 56px;
+  height: 56px;
+  border-radius: 28px;
+}
+
+.contact-page_block_text {
+	margin-left: 15px;
+	float: left;
+}
+
+.contact-page_block_text_title {
+  font-size: 19px;
+  line-height: 26px;
+  color: #2a5885;
+  font-weight: 400;
+  -webkit-font-smoothing: subpixel-antialiased;
+  -moz-osx-font-smoothing: auto;
+  letter-spacing: -0.1px;
+}
+
+.contact-page_block_text_desc {
+  color: #7c7f82;
+  line-height: 19px;
+  font-size: 14px;
+  font-weight: 300;
+  -webkit-font-smoothing: subpixel-antialiased;
+  -moz-osx-font-smoothing: auto;
+  margin-top: 2px;
+}
 /****************
 	CART
 ****************/
