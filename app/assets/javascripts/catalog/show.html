@@ -96,7 +96,8 @@
 						<h4 class="product-name">{{product.name}}</h4>
 						<!-- <p>{{product.description | limitTo:50}}..</p> -->
 						</a>
-						<h4>{{product.price}} ГРН</h4>
+						<h4><span ng-hide="product.sale_price">{{product.price}} ГРН</span>
+						<span ng-if="product.sale_price">{{product.sale_price}} ГРН</span></h4>
 						<ngcart-addtocart  id="{{product.id}}" name="{{product.name}}" data="{color: product_color, size: product_size}" price="{{product.price}}" quantity="1">Купить</ngcart-addtocart>
 						<!-- <md-button  style="color: rgb(255, 255, 255); background: rgb(76, 175, 80);">Купить</md-button> -->
 					</div>
