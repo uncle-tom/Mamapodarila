@@ -44,4 +44,8 @@ function init() {
 		return window.pageYOffset || document.documentElement.scrollTop;
 	}
 
+	$(".sticky").stick_in_parent({
+		offset_top: 10
+	});
+
 }
