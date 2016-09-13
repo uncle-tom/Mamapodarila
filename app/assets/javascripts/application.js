@@ -26,7 +26,7 @@
 //= require angular-cookie
 //= require ng-token-auth
 //= require angular-swiper
-//= require Swiper
+//= require swiper
 //= require ngstorage
 //= require router
 //= require angular-file-upload
