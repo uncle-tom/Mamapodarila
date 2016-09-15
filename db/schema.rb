@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160912091350) do
+ActiveRecord::Schema.define(version: 20160915155231) do
 
   create_table "addresses", force: :cascade do |t|
     t.integer  "order_id"
@@ -105,6 +105,7 @@ ActiveRecord::Schema.define(version: 20160912091350) do
     t.text     "complect"
     t.text     "own"
     t.text     "age"
+    t.text     "razmer"
   end
 
   create_table "shippings", force: :cascade do |t|

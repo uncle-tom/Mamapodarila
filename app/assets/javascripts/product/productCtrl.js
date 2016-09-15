@@ -83,8 +83,6 @@ function productCtrl($scope, $state, $http, $localStorage, $sessionStorage, Auth
       $state.go('adminproduct');
     });
   }
-
-  
   
   $scope.images = [
     {
@@ -94,22 +92,6 @@ function productCtrl($scope, $state, $http, $localStorage, $sessionStorage, Auth
 
   $scope.predicate = 'price';
   $scope.reverse = true;
-
-  $scope.colors = [
-    {color: "Черный"},
-    {color: "Не черный"},
-    {color: "Белый"}
-  ]
-
-  $scope.sizes = [
-    {size: "70C"},
-    {size: "75C"},
-    {size: "80C"},
-    {size: "85C"},
-    {size: "70B"},
-    {size: "75B"},
-    {size: "80B"},
-  ];
 
   $scope.$on('ngCart:itemAdded', function(event, item) {
     console.log('added', item);

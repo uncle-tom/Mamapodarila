@@ -49,7 +49,7 @@ protected
 	def product_params
 		params.require(:product).permit(:id, :name, :description,
 			:sale_price, :has_popular, :has_sale, :in_stock, :is_soft, :is_set, :is_figures, :is_board, :is_puzzles, :quantity,
-			:price, :permalink, :cover_photo_id, :categories_ids, :url_video, :full_description, :own, :age, :complect, categories:[], 
+			:price, :permalink, :cover_photo_id, :categories_ids, :url_video, :full_description, :razmer, :age, :complect, categories:[], 
       categories_ids:[], sizes:[], colors:[])
 	end
 end
