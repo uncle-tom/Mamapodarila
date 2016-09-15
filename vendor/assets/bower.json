@@ -23,8 +23,6 @@
     "md-steppers": "latest",
     "angular-translate": "latest",
     "wowjs": "latest",
-    "material-design-icons": "latest"
-  },
-  "resolutions": {
+    "angular-youtube-mb": "latest"
   }
 }

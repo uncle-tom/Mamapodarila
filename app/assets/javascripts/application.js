@@ -52,4 +52,5 @@
 //= require angular-timeago
 //= require sweetalert/dist/sweetalert.min.js
 //= require wowjs
+//= require angular-youtube-mb
 //#= require turbolinks

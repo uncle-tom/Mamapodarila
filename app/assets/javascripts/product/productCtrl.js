@@ -7,6 +7,9 @@ function productCtrl($scope, $state, $http, $localStorage, $sessionStorage, Auth
   if($stateParams.id) {
   	$http.get('/products/'+$stateParams.id+'.json').success(function(data, status, headers, config){
       $scope.product = data;
+
+      $scope.anotherGoodOne = $scope.product.url_video;
+      console.log('url youtube', $scope.anotherGoodOne )
       
       $scope.setImage($scope.product.photos[0].image.url);
       $scope.product.categories_ids = [];
@@ -79,8 +82,9 @@ function productCtrl($scope, $state, $http, $localStorage, $sessionStorage, Auth
       uploader.uploadAll();
       $state.go('adminproduct');
     });
-    
   }
+
+  
   
   $scope.images = [
     {
