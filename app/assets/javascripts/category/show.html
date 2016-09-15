@@ -18,31 +18,14 @@
 <div class="container-fluid catalog">
 	<div class="row">
 		<!-- Сайдбар - Категории - Фильтры -->
-		<div class="col-md-3">
+		<div class="col-md-3 pull-right">
 			<div class="sidebar" ng-controller="categoryCtrl">
 				<h4>Категории</h4>
 				<div ng-repeat="cat in categories">
 					<p ng-class="{ active: isActive('/categories/{{cat.name}}')}"><a href="/categories/{{cat.name}}">{{cat.name}}</a></p>	
 				</div>
 			</div>
-
-			<div class="sidebar">
-				<md-checkbox ng-click="includesSoft(true)">
-					Мягкие игрушки
-    		</md-checkbox>
-    		<br><md-checkbox ng-click="includesSet(true)">
-					Игровые наборы
-    		</md-checkbox>
-    		<br><md-checkbox ng-click="includesFigures(true)">
-					Фигурки
-    		</md-checkbox>
-    		<br><md-checkbox ng-click="includesBoard(true)">
-					Настольные игры
-    		</md-checkbox>
-    		<br><md-checkbox ng-click="includesPazzles(true)">
-					Пазлы
-    		</md-checkbox>
-			</div>
+			
 			<div class="sidebar">
 				<h4>Выберете стоимость</h4>
 				<input type="range" min="0" max="5000" data-ng-model="qty" />
@@ -77,6 +60,21 @@
 						<span ng-if="sizes.length > 0">&#10006;</span>
 					</span>
 				</div>
+				<md-checkbox ng-click="includesSoft(true)">
+					Мягкие игрушки
+    		</md-checkbox>
+    		<md-checkbox ng-click="includesSet(true)">
+					Игровые наборы
+    		</md-checkbox>
+    		<md-checkbox ng-click="includesFigures(true)">
+					Фигурки
+    		</md-checkbox>
+    		<md-checkbox ng-click="includesBoard(true)">
+					Настольные игры
+    		</md-checkbox>
+    		<md-checkbox ng-click="includesPazzles(true)">
+					Пазлы
+    		</md-checkbox>
 			</div>
 			
 			<div ng-repeat="product in resp.products | filter: setFilter | filter: softFilter | filter: figuresFilter | filter: boardFilter | filter: pazzlesFilter | filter:colors | filter:sizes | filter: minpriceFilter | orderBy:predicate:!reverse ">
