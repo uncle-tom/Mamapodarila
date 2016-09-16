@@ -23,6 +23,7 @@
     "md-steppers": "latest",
     "angular-translate": "latest",
     "wowjs": "latest",
-    "angular-youtube-mb": "latest"
+    "angular-youtube-mb": "latest",
+    "angular-sticky-box": "latest"
   }
 }

@@ -16,9 +16,10 @@
 <!-- Хлебные крошки -->
 <div class="container-fluid catalog">
 	<div class="row">
+		
 		<!-- Сайдбар - Категории - Фильтры -->
 		<div class="col-md-3 pull-right">
-			<div class="sidebar" ng-controller="categoryCtrl">
+			<div class="sidebar"  ng-controller="categoryCtrl">
 				<h4>Категории</h4>
 				<div ng-repeat="cat in categories">
 					<p><a href="/categories/{{cat.name}}">{{cat.name}}</a></p>	
@@ -98,6 +99,9 @@
 			</div>
 		</div>
 		<!-- Список продуктов -->
+
+		
+
 	</div>
 </div>
 <div ng-include="'footer/footer.html'"></div>

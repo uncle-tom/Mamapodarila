@@ -16,7 +16,9 @@ angular
     'ngCart',
     'md-steppers',
     'pascalprecht.translate',
-    'youtube-embed'
+    'youtube-embed',
+    'angular-sticky-box',
+    'ngSanitize'
   ])
   .config([
     '$stateProvider',

@@ -53,4 +53,5 @@
 //= require sweetalert/dist/sweetalert.min.js
 //= require wowjs
 //= require angular-youtube-mb
+//= require angular-sticky-box
 //#= require turbolinks
