@@ -46,21 +46,24 @@
 		<div class="col-md-9 pc-show">
 			<div class="product-page_main">
 				<div style="display:flex;">
-				<img 
-				  ng-src="{{mainImageUrl}}"  
-				  class="product-images_main"
-				  ng-repeat="img in product.photos" />	
+					<img 
+					  ng-src="{{product.photos[0].image.url}}"  
+					  class="product-images_main" 
+					/>	
 				</div>
 				<div ng-if="product.has_popular" class="haspopularphoto" style="top:-8px;">
 					<span class="haspopular">Топ продаж</span>	
 				</div>
 			</div>
 			<div class="product-page_main product-thumbs">
-			<ks-swiper-container swiper="swiper" initial-slide="0" loop="true"  pagination-is-active="false" slides-per-view="5" space-between="5" pagination-clickable="true" show-nav-buttons="true">
+				<div class="gallery" ng-controller="productCtrl as ctrl">
+          <ng-gallery images="ctrl.images" thumbs-num="11"></ng-gallery>
+        </div>
+			<!-- <ks-swiper-container swiper="swiper" initial-slide="0" loop="true"  pagination-is-active="false" slides-per-view="5" space-between="5" pagination-clickable="true" show-nav-buttons="true">
 		    	<ks-swiper-slide class="swiper-slide" ng-repeat="img in product.photos">
 		    		<img ng-click="setImage(img.image.url)" ng-src="{{img.image.url}}" alt="">
 		    	</ks-swiper-slide>
-				</ks-swiper-container>
+				</ks-swiper-container> -->
 
 			</div>
 			

@@ -18,6 +18,7 @@
 @import "swiper/dist/css/swiper.min.css";
 @import "md-steppers/dist/md-steppers.min.css";
 @import "wowjs/css/libs/animate.css";
+@import "ngGallery/src/css/ngGallery.css";
 @import "angular-sticky-box/dist/angular-sticky-box.min.css";
 @import url(https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.3.1/css/swiper.min.css);
 
@@ -765,15 +766,26 @@ footer {
 	position: relative;
   list-style: none;
   margin: 0;
-  z-index: 2;
 }
 
 .product-thumbs img {
-  height: 150px;
-  width: 150px;
+  
   outline: none;
   margin-top: 10px;
   padding: 1em 1em;
+}
+
+img.ng-thumb {
+  height: 150px;
+  width: 150px;
+}
+
+.ng-gallery-content > .ng-thumbnails-wrapper {
+	overflow: hidden !important;
+}
+
+.ng-gallery-content > .ng-thumbnails-wrapper > .ng-thumbnails {
+	margin:auto;
 }
 
 .product-thumbs li {
