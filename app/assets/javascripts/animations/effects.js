@@ -5,7 +5,8 @@ $(function(){
 function init() {
 	// Fixed admin-sidebar_left
 	var height_admin_sidebar_left = 85;
-	var width = document.body.clientWidth;	
+	var width = document.body.clientWidth;
+	console.log(width);	
 	$(window).on('scroll', function() {
 		var scroll = getCurrentScroll();
 		if ( scroll >= height_admin_sidebar_left && width > 600 ) {
