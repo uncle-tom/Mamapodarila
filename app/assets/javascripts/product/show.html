@@ -41,7 +41,7 @@
 	</div>
 </div>
 
-<div class="container wow fadeIn">
+<div class="container wow fadeIn" >
 	<div class="row product-page">
 		<div class="col-md-9 pc-show">
 			<div class="product-page_main">
@@ -68,12 +68,12 @@
 			</div>
 			
 		</div>
-		<div class="col-md-3 sticky">
-			<div class="sidebar ">
+		<div class="col-md-3">
+			<div class="sidebar" >
 				<p ng-class="product.in_stock ? 'in_stock-true' : 'in_stock-false'">Статус: {{product.in_stock ? 'В наличии' : 'Нет в наличии'}}</p>
 				<p>Артикул: {{product.permalink}}</p>
 			</div>
-			<div class="sidebar ">
+			<div class="sidebar" >
 				<pre>{{product.description}}</pre>
 				<div class="product-page_price">
 					<span ng-class="product.sale_price ? 'sale-true' : 'sale-false'">{{product.price}} ГРН</span>
@@ -82,13 +82,11 @@
 				<div class="product-page_buy">
 					<ngcart-addtocart id="{{product.id}}" name="{{product.name}}" data="{color: product_color, size: product_size}" price="{{product.price}}" quantity="1">Купить</ngcart-addtocart>
 				</div>	
-				
 			</div>
-			
 		</div>
 	</div>
 </div>
-<div class="container wow fadeIn">
+<div class="container wow fadeIn" >
 	<div class="row product-page">
 		<div class="col-md-12">
 			<div class="col-md-12 product-page_main">
