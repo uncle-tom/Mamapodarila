@@ -144,6 +144,8 @@ angular
         requireBase: false
       });
 
+      $locationProvider.hashPrefix('!');
+
       $translateProvider.translations('en', {
         'ADMIN_WELCOME': 'Welcome!',
         'ADMIN_WELCOME_MESSEGE': 'This admin panel managing your online store. Here you can quickly and easily add items, edit, upload photos, search and perform fine adjustments of the site. All this is very simple and does not require you to special knowledge.',
