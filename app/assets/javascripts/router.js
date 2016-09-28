@@ -33,7 +33,7 @@ angular
         templateUrl: 'main/index.html'
       })
       .state('product', {
-        url: '/product/{id}', 
+        url: '/products/{id}', 
         controller: 'productCtrl',
         templateUrl: 'product/show.html'
       })

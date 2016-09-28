@@ -11,5 +11,5 @@ Rails.application.routes.draw do
 
   root 'test#index'
 
-  get '*path' => redirect('/#/%{path}')
+  get '*path' => redirect('/#!/%{path}')
 end
