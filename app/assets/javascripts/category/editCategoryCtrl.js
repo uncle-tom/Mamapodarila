@@ -12,7 +12,7 @@ function editCategoryCtrl($scope, $http, $stateParams, $localStorage, $sessionSt
 
   $scope.editCategory = function(){
     Category.update({ category: $scope.category, id: $scope.category.id }, function(){
-      window.location.reload();
+      $state.go('admincategory')
     });
   }
 }

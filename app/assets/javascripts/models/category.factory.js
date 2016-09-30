@@ -29,7 +29,7 @@ angular
         }
       },
       'update': {
-        method: 'PUT',
+        method: 'PUT', 
         headers: {
           'Content-Type': 'application/json',
           'Accept': 'application/json'
