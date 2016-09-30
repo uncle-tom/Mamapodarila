@@ -99,7 +99,7 @@ angular
       })
       .state('editcategory', {
         url: '/admin/category/edit/{id}',
-        controller: 'categoryCtrl',
+        controller: 'editCategoryCtrl',
         templateUrl: 'category/admin/categoryedit.html'
       })
       .state('admincategory', {
