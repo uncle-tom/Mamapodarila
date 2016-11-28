@@ -1,16 +1,8 @@
 angular.module('MyStore').controller('mainCtrl', 
-  ['$scope', '$http', '$stateParams', '$localStorage', '$sessionStorage', 'ngCart', 'Order',
+  ['$scope', '$http', '$stateParams', '$localStorage', '$sessionStorage', 'Order',
    'Product', 'InvoiceItem', 'Address', mainCtrl]);
 
 function mainCtrl($scope, $http, $stateParams, $localStorage, $sessionStorage, ngCart, Order, Product, InvoiceItem, Address) {
-
-	$http.get('/products/'+$stateParams.id+'.json').success(function(data, status, headers, config){
-    $scope.product = data;
-  });
-
-	$http.get('products.json').success(function(data, status, headers, config){
-    $scope.products = data;
-  });
 
   $scope.reviews = [
 	  {
@@ -56,6 +48,8 @@ function mainCtrl($scope, $http, $stateParams, $localStorage, $sessionStorage, n
 	  	description: "Разработчик"
 	  }
   ]
+  
+  $scope.disableSticking = false;
 
   $scope.swiper = {};
 
@@ -109,4 +103,38 @@ function mainCtrl($scope, $http, $stateParams, $localStorage, $sessionStorage, n
       })
     }
   }
+
+
+
+
+  $scope.openexample = function(){
+    $('.example-window').fadeIn();
+  }
+  $scope.closeexample = function(){
+    $('.example-window').fadeOut();
+  }
+  $scope.vizitkaopen = false;
+
+  $scope.vizitkaPortfolio = [
+    {
+      name:"Флористика",
+      photo: "http://candyladyshop.ru/assets/img/team/team01.jpg",
+      description: "Директор"
+    }, 
+    {
+      name:"Одежда",
+      photo: "http://candyladyshop.ru/assets/img/team/team02.jpg",
+      description: "Курьер"
+    },
+    {
+      name:"Мебельный салон",
+      photo: "http://candyladyshop.ru/assets/img/team/team03.jpg",
+      description: "Быстроногий Гермес"
+    },
+    {
+      name:"Квест-комната",
+      photo: "http://candyladyshop.ru/assets/img/team/team04.jpg",
+      description: "Разработчик"
+    }
+  ]
 }

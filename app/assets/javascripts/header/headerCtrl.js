@@ -3,7 +3,7 @@ angular.module('MyStore').controller('headerCtrl',
 
 function headerCtrl($scope, $http, $localStorage, $sessionStorage, Auth, $stateParams, $location, $translate, Product) {
 	console.log('headerCtrl');
-
+	
 	$scope.isActive = function (viewLocation) { 
     return viewLocation === $location.path();
   };

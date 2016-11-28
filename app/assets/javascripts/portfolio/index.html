@@ -1,0 +1,71 @@
+<title>Kakayto</title>
+<meta name="description" content="" />
+<section id="portfoliopage">
+	<div class="container">
+		<div class="welcome-text">
+			<div class="col-md-12">
+				<div class="margin50"></div>
+				<h1>Портфолио</h1>
+				<p class="welcome-text_desc">От идеи к результату!</p>
+			</div>
+		</div>
+	</div>
+
+<!-- <div class="container portfoliopage">
+	<ul>
+		<div ng-repeat="p in portfolio">
+			<li class="col-md-4">
+				<div class="item">
+					<div class="background-image" style="background-image:url({{p.photo}})"></div>
+					<h4>{{p.name}}</h4>
+				</div>
+			</li>
+		</div>
+	</ul>
+</div> -->
+<!-- <div class="container-fluid">
+	<div class="grid-zoe">
+		<div ng-repeat="p in portfolio">
+			<div class="col-md-4">
+			<figure class="effect-zoe">
+				<img ng-src="{{p.photo}}" alt="img25"/>
+				<figcaption>
+					<h4>{{p.name}}</h4>
+					<p class="icon-links">
+						<a href="#"><span class="icon-heart"></span></a>
+					</p>
+					<p class="description"></p>
+				</figcaption>		
+			</figure>
+			</div>
+		</div>
+	</div>
+</div> -->
+
+	<div class="container-fluid portfolio">
+		<div ng-repeat="p in portfolio">
+			<div class="row">
+				<div class="col-md-6" style="float:{{p.float}}; margin:{{p.margin}}">
+					<div class="portfolio-photo" style="background: url({{p.photo}})"></div>
+				</div>
+				<div class="col-md-6">
+					<div class="portfolio-photo_desc">
+						<div class="portfolio-photo_desc_inner">
+							<h2>{{p.name}}</h2>
+							<p>{{p.desc}}</p>
+							<a href="#">Посетить сайт <i class="fa fa-arrow-circle-right" aria-hidden="true"></i></a>	
+						</div>	
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="margin50"></div>
+
+	<div class="container-fluid orderfield">
+		<div class="col-md-12">
+			<h2 class="text-center">Зачем тянуть? <a href="#">Заказывай</a> прямо сейчас</h2>
+		</div>
+	</div>
+</section>

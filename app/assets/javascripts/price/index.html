@@ -1,0 +1,109 @@
+<title>KOYOTO STUDIO</title>
+<meta name="description" content="" />
+<section id="pricepage">
+	<div class="margin50"></div>
+	<div class="row margin0">
+		<div class="price-left col-md-6 col-xs-12">
+			<div class="price-desc">
+				<div class="price-desc_inner">
+					<h2>Создание сайтов</h2>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Placeat, totam, repellat eius obcaecati, delectus provident quis harum magnam laudantium accusamus alias cumque velit, sapiente omnis culpa beatae quaerat praesentium nisi.</p>
+					<h3>Выберите тип сайта:</h3>
+					<md-input-container flex="100">
+			      <md-select name="type" ng-model="project">
+			        <md-option value="vizitka">Cайт-визитка</md-option>
+			        <md-option value="promo">Промо-сайт</md-option>
+			        <md-option value="landing">Landing Page</md-option>
+			        <md-option value="corp">Корпоративный сайт</md-option>
+			        <md-option value="store">Интернет-магазин</md-option>
+			      </md-select>
+			    </md-input-container>
+					<div>
+						<span ng-if="project === 'vizitka'">от <span class="price-number" >2 000</span> грн.</span>
+						<span ng-if="project === 'promo'">от <span class="price-number" >2 500</span> грн.</span>
+						<span ng-if="project === 'landing'">от <span class="price-number" >3 000</span> грн.</span>
+						<span ng-if="project === 'corp'">от <span class="price-number" >4 000</span> грн.</span>
+						<span ng-if="project === 'store'">от <span class="price-number" >5 000</span> грн.</span>
+					</div>
+					<div>
+						<h3>Вы получаете:</h3>
+						<p><i class="fa fa-flag-checkered" aria-hidden="true"></i> Готовый сайт на 10 страниц за 7 дней</p>
+						<p><i class="fa fa-user" aria-hidden="true"></i> Уникальный дизайн</p>
+						<p><i class="fa fa-user" aria-hidden="true"></i> Гарантируемую техническую поддержку</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="price-right col-md-6">
+			<img src="assets/price1.jpg" alt="">
+		</div>
+	</div>
+
+	<div class="row margin0" style="background:#ecf4f7">
+		<div class="price-left col-md-6">
+			<img src="assets/price2.jpg" alt="">
+		</div>
+		<div class="price-right col-md-6">
+			<div class="price-desc">
+				<div class="price-desc_inner">
+					<h2>SEO-продвижение</h2>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus alias pariatur harum, aut itaque quam nesciunt suscipit quaerat, officia maxime voluptatum tenetur ullam tempore voluptatem, fuga est asperiores ea debitis.</p>
+					<h3>Выберите, что вас интересует:</h3>
+					<md-input-container flex="100">
+			      <md-select name="type" ng-model="seo">
+			        <md-option value="seoaudit">SEO-Аудит</md-option>
+			        <md-option value="optimization">Внутренняя оптимизация</md-option>
+			        <md-option value="complex">Комплексное продвижение</md-option>
+			      </md-select>
+			    </md-input-container>
+			    <div>
+			    	<span ng-if="seo === 'seoaudit'">от <span class="price-number" >900</span> грн.</span>
+			    	<span ng-if="seo === 'optimization'">от <span class="price-number" >50</span> грн/за страницу</span>
+			    	<span ng-if="seo === 'complex'">от <span class="price-number" >3 000</span> грн/мес</span>
+			    </div>
+			    <div>
+						<h3>Вы получаете:</h3>
+						<p><i class="fa fa-flag-checkered" aria-hidden="true"></i> SEO-Аудит сайта на 10 страниц, без лишней воды</p>
+						<p><i class="fa fa-user" aria-hidden="true"></i> Рекомендации, что исправить. С подробными примерами</p>
+						<p><i class="fa fa-user" aria-hidden="true"></i> Ответы на дополнительные ваши вопросы</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	<div class="row margin0">
+		<div class="price-left col-md-6">
+			<div class="price-desc">
+				<div class="price-desc_inner">
+					<h2>Продвижение в социальных сетях - SMM</h2>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae velit praesentium possimus voluptate nemo omnis, dicta exercitationem esse sapiente minima iusto libero at ullam, ipsa delectus fuga! Est, ipsa, ducimus.</p>
+					<h3>Выберите, что вас интересует:</h3>
+					<md-input-container flex="100">
+			      <md-select name="type" ng-model="smm">
+			        <md-option value="facebook">Facebook</md-option>
+			        <md-option value="instagram">Instagram</md-option>
+			        <md-option value="vk">Vk</md-option>
+			        <md-option value="smm-complex">Комплексное продвижение</md-option>
+			      </md-select>
+			    </md-input-container>
+			    <div>
+			    	<span ng-if="smm === 'facebook'">от <span class="price-number" >2 000</span> грн.</span>
+			    	<span ng-if="smm === 'vk'">от <span class="price-number" >2 000</span> грн.</span>
+			    	<span ng-if="smm === 'instagram'">от <span class="price-number" >2 500</span> грн.</span>
+			    	<span ng-if="smm === 'smm-complex'">от <span class="price-number" >5 000</span> грн.</span>
+			    </div>
+			    <div>
+						<h3>Вы получаете:</h3>
+						<p><i class="fa fa-flag-checkered" aria-hidden="true"></i> Проработанный контент-план</p>
+						<p><i class="fa fa-user" aria-hidden="true"></i> Оформление страницы/группы</p>
+						<p><i class="fa fa-user" aria-hidden="true"></i> Ведение страницы/группы и привлечение новых клиентов.</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="price-right col-md-6">
+			<img src="assets/price3.jpg" alt="">
+		</div>
+	</div>
+</section>

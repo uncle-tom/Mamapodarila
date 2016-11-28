@@ -1,92 +1,293 @@
-<title>Интернет-магазин детских игрушек "Мама подарила!" в Украине</title>
-<meta name="description" content="Купить детские игрушки в Украине. Интернет-магазин 'Мама подарила!' предложил недорогие игрушки. Купить недорого игрушки из мультфильмов." />
+<title>Kakayto</title>
+<meta name="description" content="" />
 
-<div ng-include="'header/header.html'"></div>
 <div class="welcome">
 	<div class="welcome-text">
-		<h1>Интернет-магазин детских игрушек
-		<br>"Мама подарила!"</h1>	
-		<br><h4>Лучший выбор для подарка вашему ребенку!</h4>
-		<br><a href="/catalog"><md-button class="welcome-text_button" style="color: rgb(255, 255, 255); background: rgb(76, 175, 80);">Посмотреть каталог</md-button></a>
+		<h1>Koyoto Studio
+		<br>Создание и продвижение сайтов</h1>	
+		<br><h4>Лучший выбор для вашего бизнеса!</h4>
+		<br><a href="/catalog"><md-button class="welcome-text_button" style="color: rgb(255, 255, 255); background: rgb(76, 175, 80);">Заказать услугу</md-button></a>
 	</div>
 </div>
-<div class="container">
-	<div class="row ourplus">
-		<div class="col-md-8 col-md-offset-2 col-xs-12">			
-			<p>"Мама Подарила!"" - это интернет-магазин, которому вы сможете доверять. Мы стараемся улучшить сервис в онлайн покупках в Украине, поэтому оптимизируем каждый элемент работы.  </p>
-			
-			<br><p>В нашем интернет-магазине вы можете купить детские игрушки по доступной цене. Недорогие, но качественные игрушки - это один из главных наших принципов. Надеемся, вы получите удовольствие от покупки игрушек в нашем интернет-магазине.</p>
+
+<div class="margin50"></div>
+<h2 class="text-center uslugi-name"><span>Услуги</span></h2>
+<div class="margin50"></div>
+
+<section id="vizitka">
+	<div class="container">
+		<div class="row">
+			<div class="margin50"></div>
+			<div class="col-md-12">
+				<div class="row flex-center">
+					<div class="col-md-4">
+						<span class="vizitka-name"><i class="fa fa-circle" aria-hidden="true" style="color:#ffd300"></i> Сайт-визитка</span>
+						<div class="margin50"></div>
+					</div>
+					<div class="col-md-6"></div>
+				</div>
+			</div>
+			<div class="col-md-12">
+				<div class="row flex-center">
+					<div class="col-md-4 col-xs-12">
+						<p class="vizitka-largetext">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+					</div>
+					<div class="col-md-2 col-xs-12"></div>
+					<div class="col-md-4 col-xs-12">
+						<p class="vizitka-smalltext">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi eaque expedita veritatis harum, voluptas soluta, ad illum aut, ducimus a magni ea id! Dolorum ut rerum veritatis cum adipisci, sit. Sit commodi, optio illum dolor dolore voluptatibus, repellendus officia suscipit.
+							<br><br><a href="#" >Заказать сайт-визитку <i class="fa fa-arrow-circle-right" aria-hidden="true"></i></a>
+						</p>
+					</div>
+				</div>
+			</div>
 		</div>
-	</div>
-</div>
-<section id="coolone" class="wow fadeIn">
-	<div class="background-color">
-		<div class="container">
-			<h1>"Мама подарила!" - интернет-магазин детских игрушек</h1>
-			<hr></hr>
-			<p>Купить детские игрушки недорого вполне реально!</p>
+		<div class="margin50"></div>
+		<div class="row">
+			<div class="col-md-12 text-center">
+				<img src="assets/vizitka.jpg" alt="">
+				<p><span class="example-site" ng-click="openexample(); vizitkaopen = true" >Посмотреть пример сайта</span></p>
+			</div>
 		</div>
+		<div class="margin50"></div>
 	</div>
 </section>
 
-<div class="container mainpage_categories">
-	<h2 class="text-center">Купить игрушки из мультфильмов</h2>
-	<h4 class="text-center">У нас вы можете заказать недорогие игрушки из любимых мультфильмов</h4>
-	<div class="row">
-		<a href="#"><div class="col-md-4">
-			<div class="mainpage_category">
-				<img src="assets/mainpage-paw.jpg" alt="">
-				<div class="mainpage_category-title">Щенячий патруль</div>
-				<div class="mainpage_category-description">Игровые наборы, мягкие игрушки, гаражи</div>
+<div class="fullwidth">
+	<div class="example-window">
+		<div ng-show="vizitkaopen" class="example1">
+			<div class="close-example-window" ng-click="closeexample(); vizitkaopen = false">Закрыть</div>
+			<div class="margin50"></div>
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12">
+					<h2>Выберите тематику:</h2>
+						<div ng-repeat="my in vizitkaPortfolio">
+							<li><a href="#">{{my.name}}</a></li>
+						</div>
+					</div>
+				</div>
 			</div>
-		</div></a>
-		<a href="#"><div class="col-md-4">
-			<div class="mainpage_category">
-				<img src="assets/mainpage-vspish.jpg" alt="">
-				<div class="mainpage_category-title">Вспыш и чудо-машинки</div>
-				<div class="mainpage_category-description">Игрушечные машинки, автотреки, гаражи</div>
-			</div>
-		</div></a>
-		<a href="#"><div class="col-md-4">
-			<div class="mainpage_category">
-				<img src="assets/mainpage-secretlife.jpg" alt="">
-				<div class="mainpage_category-title">Тайная жизнь домашних животных</div>
-				<div class="mainpage_category-description">Мягкие игрушки, фигурки героев</div>
-			</div>
-		</div></a>
-	</div>
-	<button type="button" class="button-more center-block"><a href="/catalog" target="_blank">Перейти в каталог</a></button>
-</div>
-
-<div class="container">
-	<div class="row">
-		<div class="col-md-12 text-center">
-			<img src="https://allo.google.com/images/section/header/expression.gif" alt="" style="width: 80px;">
-			<h3>Подарите детям радость.</h3>
 		</div>
 	</div>
 </div>
 
 <div class="margin50"></div>
 
-<div class="container">
-	<div class="row">
-		<div class="col-md-12">
-			<div class="mainpage_sale-bg">
-				<div>
-					<img src="assets/mainpage-sale-paw.png" alt="">
+<section id="promo">
+	<div class="container">
+		<div class="row">
+			<div class="margin50"></div>
+			<div class="col-md-12">
+				<div class="row flex-center">
+					<div class="col-md-4">
+						<span class="promo-name"><i class="fa fa-circle" aria-hidden="true" style="color:lightgreen"></i> Промо-сайт</span>
+						<div class="margin50"></div>
+					</div>
+					<div class="col-md-6"></div>
 				</div>
 			</div>
-			<div class="mainpage_sale-description">
-				<div class="mainpage_sale-description-title">Купить игрушки недорого по акционным ценам</div>
-				<div class="mainpage_sale-description-desc">У нас для вас приготовлена страница с акционными товарами. Успейти купить нужную игрушку по низкой цене!</div>
-				<a href="/catalog"><md-button class="welcome-text_button" style="color: rgb(255, 255, 255); background: rgb(76, 175, 80);">Посмотреть акции</md-button></a>
+			<div class="col-md-12">
+				<div class="row flex-center">
+					<div class="col-md-4 col-xs-12">
+						<p class="promo-largetext">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+					</div>
+					<div class="col-md-2 col-xs-12"></div>
+					<div class="col-md-4 col-xs-12">
+						<p class="promo-smalltext">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi eaque expedita veritatis harum, voluptas soluta, ad illum aut, ducimus a magni ea id! Dolorum ut rerum veritatis cum adipisci, sit. Sit commodi, optio illum dolor dolore voluptatibus, repellendus officia suscipit.
+							<br><br><a href="#">Заказать промо-сайт <i class="fa fa-arrow-circle-right" aria-hidden="true"></i></a>
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		
+		<div class="margin50"></div>
+	</div>
+
+	<!-- <div class="text-center">
+		<div class="cool-block_photo">
+			<img src="assets/promo1.jpg" alt="" style="width:600px; position:absolute;left:0;">
+			<img src="assets/promo2.jpg" alt="" style="width:600px; position:absolute;right:0;">
+			<img src="assets/vizitka.jpg" alt="" style="width:870px; position:absolute;margin:auto">		
+		</div>
+		<p><span class="example-site">Посмотреть пример сайта</span></p>
+	</div> -->
+
+	<div class="text-center">
+		<div>
+			<img class="promo1" src="assets/promo1.jpg" alt="" style="width:43%; margin-right:-300px; margin-top:70px; box-shadow:rgb(51, 51, 51) 1px 5px 40px" >
+			<img class="promo2" src="assets/promo2.jpg" alt="" style="width: 43%;margin-top:70px; box-shadow:rgb(51, 51, 51) 1px 5px 40px">
+			<img src="assets/vizitka.jpg" alt="" style="width:58%; box-shadow:rgb(51, 51, 51) 1px 5px 40px; margin-top:-35%; z-index:99">		
+		</div>
+		<p><span class="example-site">Посмотреть пример сайта</span></p>
+	</div>
+
+	<!-- <div class="text-center">
+		<div>
+			<div class="col-md-4">
+				<img src="assets/promo1.jpg" alt="">
+			</div>
+			<div class="col-md-4">
+				<img src="assets/vizitka.jpg" alt="">
+			</div>
+			<div class="col-md-4">
+				<img src="assets/promo2.jpg" alt="">
+			</div>
+		</div>
+		<p><span class="example-site">Посмотреть пример сайта</span></p>
+	</div> -->
+</section>
+
+<div class="margin50"></div>
+
+<section id="landing">
+	<div class="container">
+		<div class="row">
+			<div class="margin50"></div>
+			<div class="col-md-12">
+				<div class="row flex-center">
+					<div class="col-md-4">
+						<span class="landing-name"><i class="fa fa-circle" aria-hidden="true" style="color:lightblue"></i> Landing Page</span>
+						<div class="margin50"></div>
+					</div>
+					<div class="col-md-6"></div>
+				</div>
+			</div>
+			<div class="col-md-12">
+				<div class="row flex-center">
+					<div class="col-md-4 col-xs-12">
+						<p class="landing-largetext">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+					</div>
+					<div class="col-md-2 col-xs-12"></div>
+					<div class="col-md-4 col-xs-12">
+						<p class="landing-smalltext">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi eaque expedita veritatis harum, voluptas soluta, ad illum aut, ducimus a magni ea id! Dolorum ut rerum veritatis cum adipisci, sit. Sit commodi, optio illum dolor dolore voluptatibus, repellendus officia suscipit.
+							<br><br><a href="#">Заказать Landing Page <i class="fa fa-arrow-circle-right" aria-hidden="true"></i></a>
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="margin50"></div>
+		<div class="row">
+			<div class="col-md-12 text-center">
+				<img src="http://images.apple.com/v/mac/shared/macos/a/images/macos/encryption_hero_large.jpg" alt="">
+				<p><span class="example-site">Посмотреть пример сайта</span></p>
+			</div>
+		</div>
+		<div class="margin50"></div>
+	</div>
+</section>
+
+<div class="margin50"></div>
+
+<section id="corp">
+	<div class="container">
+		<div class="row">
+			<div class="margin50"></div>
+			<div class="col-md-12">
+				<div class="row flex-center">
+					<div class="col-md-4">
+						<span class="corp-name"><i class="fa fa-circle" aria-hidden="true" style="color:blue"></i> Корпоративный сайт</span>
+						<div class="margin50"></div>
+					</div>
+					<div class="col-md-6"></div>
+				</div>
+			</div>
+			<div class="col-md-12">
+				<div class="row flex-center">
+					<div class="col-md-4 col-xs-12">
+						<p class="corp-largetext">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+					</div>
+					<div class="col-md-2 col-xs-12"></div>
+					<div class="col-md-4 col-xs-12">
+						<p class="corp-smalltext">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi eaque expedita veritatis harum, voluptas soluta, ad illum aut, ducimus a magni ea id! Dolorum ut rerum veritatis cum adipisci, sit. Sit commodi, optio illum dolor dolore voluptatibus, repellendus officia suscipit.
+							<br><br><a href="#">Заказать корпоративный сайт <i class="fa fa-arrow-circle-right" aria-hidden="true"></i></a>
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="margin50"></div>
+		<div class="row">
+			<div class="col-md-12 text-center">
+				<img src="http://images.apple.com/v/mac/shared/macos/a/images/macos/continuity_large.jpg" alt="">
+				<p><span class="example-site">Посмотреть пример сайта</span></p>
+			</div>
+		</div>
+		<div class="margin50"></div>
+	</div>
+</section>
+
+<div class="margin50"></div>
+
+<section id="store">
+	<div class="container">
+		<div class="row">
+			<div class="margin50"></div>
+			<div class="col-md-12">
+				<div class="row flex-center">
+					<div class="col-md-4">
+						<span class="store-name"><i class="fa fa-circle" aria-hidden="true" style="color:salmon"></i> Интернет-магазин</span>
+						<div class="margin50"></div>
+					</div>
+					<div class="col-md-6"></div>
+				</div>
+			</div>
+			<div class="col-md-12">
+				<div class="row flex-center">
+					<div class="col-md-4 col-xs-12">
+						<p class="store-largetext">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+					</div>
+					<div class="col-md-2 col-xs-12"></div>
+					<div class="col-md-4 col-xs-12">
+						<p class="store-smalltext">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi eaque expedita veritatis harum, voluptas soluta, ad illum aut, ducimus a magni ea id! Dolorum ut rerum veritatis cum adipisci, sit. Sit commodi, optio illum dolor dolore voluptatibus, repellendus officia suscipit.
+							<br><br><a href="#">Заказать интернет-магазин <i class="fa fa-arrow-circle-right" aria-hidden="true"></i></a>
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="margin50"></div>
+		<div class="row">
+			<div class="col-md-12 text-center">
+				<img src="http://images.apple.com/v/mac/shared/macos/a/images/macos/hardware_macbook_gray_large.png" alt="">
+				<p><span class="example-site">Посмотреть пример сайта</span></p>
+			</div>
+		</div>
+		<div class="margin50"></div>
+	</div>
+</section>
+
+<div class="margin50"></div>
+
+<section id="uslugi2">
+	<div class="container">
+		<div class="row">
+			<div class="margin50"></div>
+			<div class="col-md-12">
+				<div class="row flex-center">
+					<div class="col-md-5 col-xs-12">
+						<p class="uslugi2-smalltext"><img src="http://images.apple.com/v/mac/shared/macos/a/images/macos/universal_clipboard_large.jpg" alt="">
+							<br><br><b>SEO-продвижение.</b> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius adipisci similique quasi ratione, nam quis quibusdam consectetur repellat aut sunt tenetur maxime non quo rem veniam sequi quia voluptatum quam ipsa, repellendus repudiandae itaque architecto libero fugit! Adipisci consequuntur delectus blanditiis labore laboriosam quas ab, inventore dolorum vel, ullam id! 
+						</p>
+
+					</div>
+					
+					<div class="col-md-5 col-xs-12">
+						<p class="uslugi2-smalltext"><img src="http://images.apple.com/v/mac/shared/macos/a/images/macos/universal_clipboard_large.jpg" alt="">
+							<br><br><b>Продвижение в социальных сетях.</b> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates placeat facilis explicabo optio eaque dignissimos repellat eligendi, ullam consequatur reiciendis possimus repudiandae exercitationem eius nulla consectetur, voluptas omnis, neque quas quod illo necessitatibus eveniet aliquam laboriosam molestiae magni. Quos assumenda magni quisquam aliquam quia, facere numquam ab, autem praesentium veniam.
+						</p>
+					</div>
+				</div>
 			</div>
 		</div>
 	</div>
-</div>
+</section>
 
-<div ng-include="'footer/footer.html'"></div>
+ 
+
+
 
 <script type="text/javascript">
 	new WOW().init();

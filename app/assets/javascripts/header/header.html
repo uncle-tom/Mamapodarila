@@ -1,7 +1,9 @@
+<header class="nav-down">
+<div class="div"></div>
 <nav class="header" ng-controller="headerCtrl">
-	<div class="container">
+	<div class="container-fluid">
 		<div class="row">
-			<div class="brand pull-left"><li><a href="/">Мама подарила!</a></li>
+			<div class="brand pull-left"><li><a href="/">KOYOTO Studio</a></li>
 			</div>
 			<div class="togglemenu pull-right">
 				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
@@ -13,14 +15,120 @@
 			</div>
 			<div class="navigation pull-right">
 				<ul class="collapse navbar-collapse navigation" id="bs-example-navbar-collapse-1">
-				<li ng-class="{ active: isActive('/catalog')}"><a href="/catalog">Каталог</a></li>
-				<li ng-class="{ active: isActive('/about')}"><a href="/about">О нас</a></li>
-				<li ng-class="{ active: isActive('/paydelivery')}"><a href="/paydelivery">Оплата и доставка</a></li>
-				<li ng-class="{ active: isActive('/contact')}"><a href="/contact">Контакты</a></li>
-				<li ng-class="{ active: isActive('/cart')}"><a href="/cart">Корзина</a></li>
-				<li><a href="/cart"><ngcart-summary></ngcart-summary></a></li>
+				<!-- МОБИЛЬНЫЙ -->
+				<div class="mobile-show">
+					<div class="row">
+						<div class="col-xs-3">
+							<img src="/assets/icon/search.png" alt="">
+						</div>
+						<div class="col-xs-9">
+							<h2><a href="">Каталог</a></h2>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-xs-3">
+							<img src="/assets/icon/locating.png" alt="">
+						</div>
+						<div class="col-xs-9">
+							<h2><a href="">Контакты</a></h2>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-xs-3">
+							<img src="/assets/icon/search.png" alt="">
+						</div>
+						<div class="col-xs-9">
+							<h2><a href="">Акции</a></h2>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-xs-3">
+							<img src="/assets/icon/e-commerce-like-heart.png" alt="">
+						</div>
+						<div class="col-xs-9">
+							<h2><a href="">Доставка</a></h2>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-xs-3">
+							<img src="/assets/icon/locating.png" alt="">
+						</div>
+						<div class="col-xs-9">
+							<h2><a href="">Оплата</a></h2>	
+						</div>
+					</div>
+				</div>
+				<!-- Мобильный END -->
+
+				<div class="pc-show">
+					<div id="clothesdrop">
+						<li id="clothesheader">
+							<a href="">Услуги</a>
+						</li>
+						<div id="clothesheaderopen">
+							<div class="container">
+								<div class="row" style="margin:auto">
+									<div class="col-md-12">
+										<a href="/create"><div class="col-md-4 uslugi-create">
+											<h3>Создание сайтов</h3>
+											<p><i class="fa fa-angle-double-right" aria-hidden="true"></i> Сайт-визитка</p>
+											<p><i class="fa fa-angle-double-right" aria-hidden="true"></i> Промо сайт</p>
+											<p><i class="fa fa-angle-double-right" aria-hidden="true"></i> Landing Page</p>
+											<p><i class="fa fa-angle-double-right" aria-hidden="true"></i> Корпоративный сайт</p>
+											<p><i class="fa fa-angle-double-right" aria-hidden="true"></i> Интернет-магазин</p>
+										</div></a>
+										<div class="col-md-4 uslugi-seo">
+											<h3>SEO-Продвижение</h3>
+											<p><i class="fa fa-angle-double-right" aria-hidden="true"></i> SEO-Аудит</p>
+											<p><i class="fa fa-angle-double-right" aria-hidden="true"></i> Внутренняя оптимизация</p>
+											<p><i class="fa fa-angle-double-right" aria-hidden="true"></i> Комплексное продвижение</p>
+										</div>
+										<div class="col-md-4 uslugi-smm">
+											<h3>SMM-Продвижение</h3>
+											<p><i class="fa fa-angle-double-right" aria-hidden="true"></i> Facebook</p>
+											<p><i class="fa fa-angle-double-right" aria-hidden="true"></i> Vk</p>
+											<p><i class="fa fa-angle-double-right" aria-hidden="true"></i> Instagram</p>
+											<p><i class="fa fa-angle-double-right" aria-hidden="true"></i> Комплексное продвижение</p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div id="accdrop">
+						<li id="accheader">
+							<a href="/portfolio">Портфолио</a>
+						</li>
+						<!-- <div id="accheaderopen" class="container">
+							<div class="row">
+								<div class="col-md-3">
+									<img src="https://shopit-dunebuggysrl.netdna-ssl.com/shop/media/catalog/category/woman.jpg" alt="">
+								</div>
+								<div class="col-md-9">
+									<h2>Аксессуары</h2>
+								</div>
+							</div>
+						</div> -->
+					</div>
+					<div id="div">
+						<li id="#">
+							<a href="/price">Цены</a>
+						</li>
+					</div>
+					<div id="div">
+						<li id="#">
+							<a href="/contact">Контакты</a>
+						</li>
+					</div>
+					<div id="div">
+						<li id="#">
+							<a href="/about">О компании</a>
+						</li>
+					</div>
+				</div>
 				</ul>
 			</div>
 		</div>
 	</div>
 </nav>
+</header>
